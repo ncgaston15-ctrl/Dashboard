@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="src/css/style.css">
+        <title>Dashboard</title>
+    </head>
+
+    <body>
+        <header>
+        <p>Dashboard</p>
+        <button class="menu-toggle" id="mobile-menu">☰</button>
+        </header>
+        <nav>
+            <ul id="nav-list" class="nav-links">
+                <li><a href="index.html" class="focused">Home</a></li>
+                <li><a href="pages/tasks.html">Tasks</a></li>
+                <li><a href="pages/tools.html">Tools</a></li>
+                <li><a href="pages/notes.html">Notes</a></li>
+            </ul>
+        </nav>
+        <main class="container">
+            <div class="card">
+                <h1 id="greeting">Hello there.</h1>
+                <p id="dateDisplay">Loading date...</p>
+                <p id="clock">Loading time...</p>
+            </div>
+            <div class="card">
+                <h2>Random fact</h2>
+                <p id="randomFact"></p>
+                <button id="newFact" class="link">New fact</button>
+            </div>
+            <div class="card">
+                <h2>Weather</h2>
+                 <p id="weather-temp">Loading weather...</p>
+                <p id="weather-description"></p>
+                <p id="weather-wind"></p>
+                <small>Weather by Open-Meteo</small>
+            </div>
+            <div class="card">
+                <h2>Task summary</h2>
+                <p id="tasksToDo">You're all caught up!</p>
+                <p id="tasksComplete">Tasks complete: 0</p>
+                <a class="link" href="pages/tasks.html">Go to tasks</a>
+            </div>
+        </main>
+        <script src="src/script/script.js"></script>
+        <script src="src/script/home.js"></script>
+    </body>
+</html>
