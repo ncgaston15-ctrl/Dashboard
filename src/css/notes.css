@@ -1,0 +1,19 @@
+.note {
+    padding: 10px 15px;
+    border: 2px solid #5145FF;
+    background-color: #f0f0f0;
+    border-radius: 12px;
+    align-items: center;
+    gap: 12px;
+}
+
+.noteList {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.note .delete {
+    width: 80px;
+    height: 30px;
+}

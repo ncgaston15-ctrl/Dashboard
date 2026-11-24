@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../src/css/style.css">
+        <title>Dashboard</title>
+    </head>
+
+    <body>
+        <header>
+        <p>Dashboard</p>
+        <button class="menu-toggle" id="mobile-menu">☰</button>
+        </header>
+        <nav>
+            <ul id="nav-list" class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="tasks.html" class="focused">Tasks</a></li>
+                <li><a href="tools.html">Tools</a></li>
+                <li><a href="notes.html">Notes</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div class="card">
+                <h1>Tasks.</h1>
+            <p id="dateDisplay">Loading...</p>
+            </div>
+            <div class="card">
+                <form id="addTask" class="inputForm">
+                    <label>
+                        <span>Task name</span>
+                        <input type="text" id="taskInput" class="text" placeholder="Task Name">
+                    </label>
+                    <label>
+                        <span>Description</span>
+                        <input type="text" id="taskDescription" class="text" placeholder="Description">
+                    </label>
+                    <label>
+                        <span>Due date</span>
+                        <input type="date" id="taskDueDate" class="text">
+                    </label>
+                    <input type="submit" class="submit" value="Add Task">
+                    <p id="messageDisplay" class="messageDisplay"></p>
+                </form>
+            </div>
+            
+            <div class="card">
+                <p id="todo">You have 0 incomplete tasks.</p>
+                <div id="taskList" class="taskList"></div>
+            </div>
+        </main>
+        <script src="../src/script/script.js"></script>
+        <script src="../src/script/tasks.js"></script>
+    </body>
+</html>

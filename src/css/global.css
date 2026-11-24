@@ -1,0 +1,147 @@
+@font-face {
+    font-family: 'DM Sans';
+    src: url(../../assets/fonts/DMSans-VariableFont_opsz\,wght.ttf);
+}
+
+body {
+    margin: 0;
+}
+
+html {
+    background-color: #f0f0f0;
+    font-family: 'DM Sans', sans-serif;
+}
+
+main {
+    padding: 5px
+}
+
+h1, h2 {
+    margin-top: 5px;
+
+}
+
+.card {
+    border-radius: 12px;
+    background-color: white;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+}
+
+.messageDisplay {
+    color:#fd0f0f;
+    margin: 10px 0;
+}
+
+.inputForm {
+    margin-bottom: 20px;
+}
+
+.text {
+    box-sizing: border-box;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    padding: 5px;
+    font-family: 'DM Sans', sans-serif;
+    border: 2px solid #D1D5DB;
+    border-radius: 6px;
+}
+
+.text-long {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+    padding: 5px;
+    font-family: 'DM Sans', sans-serif;
+    border: 2px solid #D1D5DB;
+    border-radius: 6px;
+}
+
+.text:focus, .text-long:focus {
+    outline: none;
+    border-color: #5145FF;
+}
+
+.submit {
+    background-color: #5145FF;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 6px;
+    width: 100%;
+    height: 40px;
+    padding: 5px;
+    margin-top: 10px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.submit:hover {
+    background-color: black;
+}
+
+#weather-temp {
+    font-size: 36px;
+    font-weight: bold;
+    color: #5145FF;
+    margin: 5px 0;
+}
+
+.link {
+    color:#5145FF;
+    text-decoration: underline;
+    background: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'DM Sans', sans-serif;
+    padding: 0;
+    transition: 0.2s;
+}
+
+.link:hover {
+    color: black;
+}
+
+small {
+    color: #777777
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.delete {
+    background-color: #fd0f0f;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 6px;
+    width: 80px;
+    height: 60px;
+    padding: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'DM Sans', sans-serif;
+    text-align: center;
+    margin-left: auto;
+    transition: 0.2s;
+}
+
+.delete:hover {
+    background-color: black;
+}
+
+@media (max-width: 600px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}

@@ -1,0 +1,41 @@
+.taskList {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+
+.task label {
+    padding: 10px 15px;
+    border: 2px solid #5145FF;
+    background-color: #f0f0f0;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.done label {
+    border-color: #2E7D32;
+}
+
+.done label .task-title {
+    color: #777;
+    text-decoration: line-through;
+}
+
+.task input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  accent-color: #2E7D32;
+  cursor: pointer;
+}
+
+.task-duedate {
+    color: #777;
+    font-size: 14px;
+}
+
+.task-title, .task-description, .task-duedate {
+    margin: 5px;
+}

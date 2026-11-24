@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../src/css/style.css">
+        <title>Dashboard</title>
+    </head>
+
+    <body>
+        <header>
+        <p>Dashboard</p>
+        <button class="menu-toggle" id="mobile-menu">☰</button>
+        </header>
+        <nav>
+            <ul id="nav-list" class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="tasks.html">Tasks</a></li>
+                <li><a href="tools.html" class="focused">Tools</a></li>
+                <li><a href="notes.html">Notes</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div class="card">
+                <h1>Tools.</h1>
+            <p id="dateDisplay">Loading...</p>
+            </div>
+            <div class="container">
+                <div class="card">
+                    <h2>Random number</h2>
+                    <form id="randomNumInput">
+                        <label>
+                            <span>Mininum value</span>
+                            <input type="number" id="minValue" class="text" placeholder="Mininum">
+                        </label>
+                        <label>
+                            <span>Maximum value</span>
+                            <input type="number" id="maxValue" class="text" placeholder="Maximum">
+                        </label>
+                        <input type="submit" class="submit" value="Generate">
+                    </form>
+                    <p id="randomNumDisplay" class="messageDisplay"></p>
+                    <p id="randomNumResult" class="result"></p>
+                </div>
+                <div class="card">
+                    <h2>Random choice</h2>
+                    <form id="randomChoiceInput">
+                        <label>
+                            <span>Enter options, seperating them with a comma.</span>
+                            <input type="text" id="options" class="text" placeholder="Enter options">
+                        </label>
+                        <input type="submit" class="submit" value="Generate">
+                    </form>
+                    <p id="randomChoiceDisplay" class="messageDisplay"></p>
+                    <p id="randomChoiceResult" class="result" value="Generate"></p>
+                </div>
+            </div>
+        </main>
+        <script src="../src/script/script.js"></script>
+        <script src="../src/script/tools.js"></script>
+    </body>
+</html>

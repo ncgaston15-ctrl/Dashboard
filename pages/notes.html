@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../src/css/style.css">
+        <title>Dashboard</title>
+    </head>
+
+    <body>
+        <header>
+        <p>Dashboard</p>
+        <button class="menu-toggle" id="mobile-menu">☰</button>
+        </header>
+        <nav>
+            <ul id="nav-list" class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="tasks.html">Tasks</a></li>
+                <li><a href="tools.html">Tools</a></li>
+                <li><a href="notes.html" class="focused">Notes</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div class="card">
+                <h1>Notes.</h1>
+                <p id="dateDisplay">Loading...</p>
+            </div>
+            <div class="card">
+                <form id="addNote" class="inputForm">
+                    <label>
+                        <span>Enter a note</span>
+                        <textarea rows="5" cols="50" id="noteInput" class="text-long" placeholder="Note Text"></textarea>
+                    </label>
+                    <input type="submit" class="submit" value="Add Note">
+                    <p id="messageDisplay" class="messageDisplay"></p>
+                </form>
+            </div>
+            
+            <div class="card">
+                <p id="count">You have 0 notes.</p>
+                <div id="noteList" class="noteList"></div>
+            </div>
+        </main>
+        <script src="../src/script/script.js"></script>
+        <script src="../src/script/notes.js"></script>
+    </body>
+</html>
